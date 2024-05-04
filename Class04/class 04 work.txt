@@ -1,0 +1,100 @@
+Class 04 (05/03/2024)
+
+
+tsc --init 		===> 
+npm init -y 		===>
+npm i @types/node -D 	===>
+npm i inquirer 		===>
+npm i --save-dev @types/inquirer ===>
+npm install chalk
+
+
+***************************************************************************************************
+await: user ko wait krany k liye 
+prompt : user se response leny k liye use hota hai..
+inquirer : 3rd party App
+
+
+inquirer ko use krny k liye kuch changing krni hoti h:
+
+1. tsconfig ki file me (line no 14 = "target": "es2020") , (line no 28 = "module": "NodeNext",) or (line no 30 = "moduleResolution": "NodeNext", ) me changing krni h(Updae krna hai aisy)
+
+2. "type": "module" : ye wali command add krna h package.JSON wali file me   ("main": "main.js", is k bad krna hai)
+
+**************************************************************************************************
+
+import inquirer from "inquirer";
+
+let answer = await inquirer.prompt([{   
+    name : "userName",
+    type : "string",
+    message : "What is your name?",
+
+}]);
+
+console.log(answer);
+
+=====> output
+
+C:\Users\user\Desktop\GenAI\Class04>tsc
+
+C:\Users\user\Desktop\GenAI\Class04>node main.js
+? What is your name? Nasir
+{ userName: 'Nasir' }
+
+
+************************************
+
+console.log(`Welcome ${answer} !`)
+
+output ====>
+
+C:\Users\user\Desktop\GenAI\Class04>node main.js
+? What is your name? Nasir
+Welcome [object Object] !
+
+
+****************************************
+
+console.log(`Welcome ${answer.userName} !`)
+
+output ==>
+
+C:\Users\user\Desktop\GenAI\Class04>node main.js
+? What is your name? Nasir
+Welcome Nasir !
+
+
+*****************************************************************************
+Install Chalk Dependency :
+npm install chalk
+
+output ==> 
+
+C:\Users\user\Desktop\GenAI\Class04>npm install chalk
+
+up to date, audited 71 packages in 3s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+in VS code ===>
+
+import inquirer from "inquirer";
+import chalk from "chalk"
+
+let userAge = await inquirer.prompt([{
+    name : "age",
+    type : "number",
+    message : "Enter your Age:"
+}]);
+
+console.log(chalk.blue("InShaALLAH in, " + (60 - userAge.age) + " years you will be 60 years old."));
+
+output in terminal ==>
+
+C:\Users\user\Desktop\GenAI\Class04>tsc              
+
+C:\Users\user\Desktop\GenAI\Class04>node app.js
+? Enter your Age: 26
+InShaALLAH in, 34 years you will be 60 years old.  // color blue ho jaye ga
