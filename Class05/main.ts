@@ -171,15 +171,15 @@
 // console.log(--a); // 4 ( Pre Decrement : Phly value ko subtract kry ga us k bd return kry ga)
 // console.log(a); // 4
 
-let num1: number = 5;
-let num2: number = 6;
+// let num1: number = 5;
+// let num2: number = 6;
 
-let pre = ++num1
-let post = num1++
+// let pre = ++num1
+// let post = num1++
 
-console.log(pre);
-console.log(post);
-console.log(num1);
+// console.log(pre);
+// console.log(post);
+// console.log(num1);
 
 
 
