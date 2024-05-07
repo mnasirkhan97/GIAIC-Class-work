@@ -1,0 +1,31 @@
+==========> (.js ki file men changing nh krni)
+
+Topics :
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Divid
+5. Concatenation
+6. Exponentiation : When an exponent is a positive integer, that exponent indicates how many copies of the base are multiplied together.
+ For example, 35 = 3 · 3 · 3 · 3 · 3 = 243.
+
+7. Modulus (reminder) : It's the remainder operator and is used to get the remainder after integer division. 
+ Lots of languages have it. For example:
+
+10 % 3 // = 1 ; because 3 * 3 gets you 9, and 10 - 9 is 1.
+
+8. Unary Operators : (++), (--) Prefix and postfix operators
+Unary Operators work on a single operand and perform various operations, 
+like incrementing/decrementing, evaluating data type, negation of a value, etc.
+
+
+* Post increment : Post-increment operator: A post-increment operator is used to increment the value of a variable 
+after executing the expression in which the operator is used. 
+With the post-increment operator, the value of the variable is first used in an expression and then incremented. 
+Syntax: int x = 10; int a; a = x++;
+
+* Post Decrement: phly return kry ga us k bd value ko subtract (-) kry ga
+
+* Pre Decrement : Phly value ko subtract kry ga us k bd return kry ga
+
+
