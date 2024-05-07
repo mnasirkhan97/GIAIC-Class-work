@@ -24,8 +24,8 @@ after executing the expression in which the operator is used.
 With the post-increment operator, the value of the variable is first used in an expression and then incremented. 
 Syntax: int x = 10; int a; a = x++;
 
-* Post Decrement: phly return kry ga us k bd value ko subtract (-) kry ga
+* Post Decrement: phly return kry ga us k bd value ko subtract (-) kry ga.
 
-* Pre Decrement : Phly value ko subtract kry ga us k bd return kry ga
+* Pre Decrement : Phly value ko subtract kry ga us k bd return kry ga.
 
 
