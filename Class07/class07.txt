@@ -1,0 +1,8 @@
+#Command:
+tsc --init 		===> 
+npm init -y 		===>
+npm i @types/node -D 	===>
+npm i inquirer 		===>
+npm i --save-dev @types/inquirer ===>
+
+#Add "type": "module" in package.json file
