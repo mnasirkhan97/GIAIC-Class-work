@@ -1,0 +1,6 @@
+#Command:
+tsc --init 		===> 
+npm init -y 		===>
+npm i @types/node -D 	===>
+
+#Add "type": "module" in package.json file
